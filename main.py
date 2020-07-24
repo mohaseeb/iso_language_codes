@@ -34,8 +34,11 @@ def clean_codes_table(header, body):
 
 
 def print_codes_table(header, body):
+    def escape_quotes(txt):
+        return txt.replace('"', '\\"')
+
     def row_to_str(row):
-        quoted_cells = ['"' + cell + '"' for cell in row]
+        quoted_cells = ['"' + escape_quotes(cell) + '"' for cell in row]
         return f'[{", ".join(quoted_cells)}]'
 
     print(f'header = {row_to_str(header)}')
