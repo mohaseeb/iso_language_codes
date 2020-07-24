@@ -4,7 +4,7 @@ Scrapes the list of (ISO 639-1) language codes from [wikipedia](https://en.wikip
 ## Usage
 * Install
     ```bash
-    git clone TODO
+    git clone git@github.com:mohaseeb/iso_language_codes.git
     cd iso_language_codes
     # create a virtual env (recommended)
     pip install -r requirements.txt

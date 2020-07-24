@@ -27,7 +27,7 @@ def scrape_codes_table():
 
 def clean_codes_table(header, body):
     def clean_lang_row(row):
-        row_ = row[1:]  # we don't care of the lang family color code
+        row_ = row[1:]  # we don't care about the lang family color code
         return [cell.strip() for cell in row_]
 
     return clean_lang_row(header), [clean_lang_row(r) for r in body]
